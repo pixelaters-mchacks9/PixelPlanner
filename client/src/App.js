@@ -9,6 +9,7 @@ import {
   AppointmentTooltip
 } from '@devexpress/dx-react-scheduler-material-ui';
 
+import Schedule from './components/Schedule';
 const currentDate = '2018-11-01';
 const schedulerData = [
   { startDate: '2018-11-01T09:45', endDate: '2018-11-01T11:00', title: 'Meeting' },
@@ -16,27 +17,7 @@ const schedulerData = [
 ];
 function App() {
   return (
-    <Paper>
-      <Scheduler
-        data={schedulerData}
-      >
-        <ViewState
-          currentDate={currentDate}
-        />
-        <DayView
-          startDayHour={9}
-          endDayHour={14}
-        />
-        <Appointments />
-        <AppointmentTooltip
-            showCloseButton
-            showOpenButton
-          />
-          <AppointmentForm
-           
-          />
-      </Scheduler>
-    </Paper>
+    <Schedule></Schedule>
   );
 }
 export default App;
