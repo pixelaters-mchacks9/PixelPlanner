@@ -30,6 +30,7 @@ import {
   Appointments,
 } from '@devexpress/dx-react-scheduler-material-ui';
 
+const sampleData = require('./data/calendar-data.json')
 const currentDate = '2018-11-01';
 const schedulerData = [
   { startDate: '2018-11-01T09:45', endDate: '2018-11-01T11:00', title: 'Meeting' },
@@ -39,7 +40,7 @@ function App() {
   return (
     <Paper>
       <Scheduler
-        data={schedulerData}
+        data={sampleData}
       >
         <ViewState
           currentDate={currentDate}
