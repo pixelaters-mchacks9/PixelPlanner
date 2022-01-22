@@ -48,7 +48,7 @@
     "comma-spacing": ["warn", { "before": false, "after": true }],
     "comma-style": ["warn", "last"],
     "brace-style": ["warn"],
-    "max-len": ["warn", 100],
+    "max-len": ["warn", 200],
     "no-inline-comments": "error",
     "no-tabs": "error",
     "space-infix-ops": "warn",

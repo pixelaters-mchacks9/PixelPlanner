@@ -9,21 +9,27 @@ import {
   AppointmentForm,
   AppointmentTooltip,
   ConfirmationDialog,
-  ViewSwitcher, 
+  ViewSwitcher,
   Toolbar
 } from '@devexpress/dx-react-scheduler-material-ui';
 
 import { appointments } from '../appointments';
+const jsondata = require('../data/sample_data_1.json')
+const sampleData = jsondata.SampleData
 
 export default class Schedule extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      data: appointments,
-      currentDate: '2018-06-27',
+      data: sampleData,
+      currentDate: '2022-01-22',
+      currentViewName: 'day'
     };
 
     this.commitChanges = this.commitChanges.bind(this);
+    this.currentViewNameChange = (currentViewName) => {
+      this.setState({ currentViewName });
+    };
   }
 
   commitChanges({ added, changed, deleted }) {
@@ -34,8 +40,8 @@ export default class Schedule extends React.PureComponent {
         data = [...data, { id: startingAddedId, ...added }];
       }
       if (changed) {
-        data = data.map(appointment => (
-          changed[appointment.id] ? { ...appointment, ...changed[appointment.id] } : appointment));
+        data = data.map((appointment) => (
+            changed[appointment.id] ? { ...appointment, ...changed[appointment.id] } : appointment));
       }
       if (deleted !== undefined) {
         data = data.filter(appointment => appointment.id !== deleted);
@@ -45,7 +51,7 @@ export default class Schedule extends React.PureComponent {
   }
 
   render() {
-    const { currentDate, data } = this.state;
+    const { currentDate, data, currentViewName } = this.state;
 
     return (
       <Paper>
@@ -54,20 +60,26 @@ export default class Schedule extends React.PureComponent {
           height={660}
         >
           <ViewState
-            currentDate={currentDate}
+            defaultCurrentDate={"2022-01-21"}
+            currentViewName={currentViewName}
+            onCurrentViewNameChange={this.currentViewNameChange}
           />
           <EditingState
             onCommitChanges={this.commitChanges}
           />
           <IntegratedEditing />
+
           <WeekView
-            startDayHour={9}
-            endDayHour={19}
+            name="mchacks"
+            displayName="Full Schedule"
+            excludedDays={[1, 2, 3, 4]}
+            startDayHour={0}
+            endDayHour={23}
           />
-          <DayView 
-            startDayHour={9}
-            endDayHour={19}
-            />
+          <DayView
+            startDayHour={3}
+            endDayHour={20}
+          />
           <ConfirmationDialog />
           <Appointments />
           <AppointmentTooltip
