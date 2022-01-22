@@ -1,9 +1,9 @@
 import * as React from 'react';
-import Schedule from './components/Schedule';
+import Home from './components/Home';
 
 function App() {
   return (
-    <Schedule></Schedule>
+    <Home></Home>
   );
 }
 export default App;

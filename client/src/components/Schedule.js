@@ -13,7 +13,6 @@ import {
   Toolbar
 } from '@devexpress/dx-react-scheduler-material-ui';
 
-import { appointments } from '../appointments';
 const jsondata = require('../data/sample_data_1.json')
 const sampleData = jsondata.SampleData
 
@@ -40,11 +39,11 @@ export default class Schedule extends React.PureComponent {
         data = [...data, { id: startingAddedId, ...added }];
       }
       if (changed) {
-        data = data.map((appointment) => (
-            changed[appointment.id] ? { ...appointment, ...changed[appointment.id] } : appointment));
+        data = data.map((event) => (
+            changed[event.id] ? { ...event, ...changed[event.id] } : event));
       }
       if (deleted !== undefined) {
-        data = data.filter(appointment => appointment.id !== deleted);
+        data = data.filter(event => event.id !== deleted);
       }
       return { data };
     });
