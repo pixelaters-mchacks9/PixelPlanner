@@ -4,10 +4,13 @@ import { ViewState, EditingState, IntegratedEditing } from '@devexpress/dx-react
 import {
   Scheduler,
   DayView,
+  WeekView,
   Appointments,
   AppointmentForm,
   AppointmentTooltip,
   ConfirmationDialog,
+  ViewSwitcher, 
+  Toolbar
 } from '@devexpress/dx-react-scheduler-material-ui';
 
 import { appointments } from '../appointments';
@@ -57,10 +60,14 @@ export default class Schedule extends React.PureComponent {
             onCommitChanges={this.commitChanges}
           />
           <IntegratedEditing />
-          <DayView
+          <WeekView
             startDayHour={9}
             endDayHour={19}
           />
+          <DayView 
+            startDayHour={9}
+            endDayHour={19}
+            />
           <ConfirmationDialog />
           <Appointments />
           <AppointmentTooltip
@@ -68,6 +75,8 @@ export default class Schedule extends React.PureComponent {
             showDeleteButton
           />
           <AppointmentForm />
+          <Toolbar />
+          <ViewSwitcher />
         </Scheduler>
       </Paper>
     );
