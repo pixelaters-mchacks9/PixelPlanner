@@ -14,11 +14,13 @@ import {
   DateNavigator,
   TodayButton
 } from '@devexpress/dx-react-scheduler-material-ui';
-
-import { appointments } from '../appointments';
 const jsondata = require('../data/sample_data_1.json')
 const sampleData = jsondata.SampleData
 import Header from './Header';
+
+import styled from 'styled-components';
+import { Button } from 'react95';
+
 export default class Schedule extends React.PureComponent {
   constructor(props) {
     super(props);
