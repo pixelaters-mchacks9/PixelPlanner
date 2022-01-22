@@ -23,9 +23,9 @@ export default class Schedule extends React.PureComponent {
     this.state = {
       data: sampleData,
       currentDate: '2022-01-22',
-      currentViewName: 'day'
+      currentViewName: 'mchacks'
     };
-
+    this.defaultDate = "2022-01-22"
     this.commitChanges = this.commitChanges.bind(this);
     this.currentViewNameChange = (currentViewName) => {
       this.setState({ currentViewName });
@@ -51,7 +51,7 @@ export default class Schedule extends React.PureComponent {
   }
 
   render() {
-    const { currentDate, data, currentViewName } = this.state;
+    const { defaultDate, data, currentViewName } = this.state;
 
     return (
       <Paper>
@@ -60,7 +60,7 @@ export default class Schedule extends React.PureComponent {
           height={660}
         >
           <ViewState
-            defaultCurrentDate={"2022-01-21"}
+            defaultCurrentDate={defaultDate}
             currentViewName={currentViewName}
             onCurrentViewNameChange={this.currentViewNameChange}
           />
