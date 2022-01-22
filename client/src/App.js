@@ -30,7 +30,7 @@ import {
   Appointments,
 } from '@devexpress/dx-react-scheduler-material-ui';
 
-const data = require('./data/calendar-data.json')
+const data = require('./data/sample_data_1.json')
 const sampleData = data.SampleData
 const currentDate = '2022-01-22';
 
@@ -44,8 +44,8 @@ function App() {
           currentDate={currentDate}
         />
         <DayView
-          startDayHour={9}
-          endDayHour={14}
+          startDayHour={8}
+          endDayHour={23}
         />
         <Appointments />
       </Scheduler>

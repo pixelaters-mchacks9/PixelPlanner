@@ -1,152 +1,184 @@
-[
-    {
-        "startDate": "2022-01-22 23:43:15",
-        "endDate": "2022-01-23 14:34:54",
-        "title": "dolor vel est donec"
-    },
-    {
-        "startDate": "2022-01-22 22:48:59",
-        "endDate": "2022-01-23 23:22:25",
-        "title": "volutpat eleifend donec ut dolor morbi"
-    },
-    {
-        "startDate": "2022-01-22 07:19:58",
-        "endDate": "2022-01-23 08:02:59",
-        "title": "aliquet at feugiat non pretium quis"
-    },
-    {
-        "startDate": "2022-01-22 01:27:13",
-        "endDate": "2022-01-23 04:29:08",
-        "title": "neque duis bibendum morbi non quam"
-    },
-    {
-        "startDate": "2022-01-22 12:22:39",
-        "endDate": "2022-01-23 22:21:42",
-        "title": "mi pede malesuada in"
-    },
-    {
-        "startDate": "2022-01-22 16:45:58",
-        "endDate": "2022-01-23 11:47:17",
-        "title": "ac neque"
-    },
-    {
-        "startDate": "2022-01-22 23:26:32",
-        "endDate": "2022-01-23 04:31:24",
-        "title": "duis faucibus accumsan odio curabitur convallis"
-    },
-    {
-        "startDate": "2022-01-22 10:39:15",
-        "endDate": "2022-01-23 04:27:19",
-        "title": "vitae ipsum aliquam"
-    },
-    {
-        "startDate": "2022-01-22 19:23:37",
-        "endDate": "2022-01-23 06:08:39",
-        "title": "sapien non mi integer"
-    },
-    {
-        "startDate": "2022-01-22 07:23:48",
-        "endDate": "2022-01-23 23:55:01",
-        "title": "iaculis justo in hac"
-    },
-    {
-        "startDate": "2022-01-22 23:58:59",
-        "endDate": "2022-01-23 14:26:13",
-        "title": "nisl aenean"
-    },
-    {
-        "startDate": "2022-01-22 06:08:32",
-        "endDate": "2022-01-23 05:27:38",
-        "title": "dui maecenas tristique est et"
-    },
-    {
-        "startDate": "2022-01-22 13:04:59",
-        "endDate": "2022-01-23 17:49:37",
-        "title": "augue vestibulum"
-    },
-    {
-        "startDate": "2022-01-22 07:03:31",
-        "endDate": "2022-01-23 11:51:51",
-        "title": "rutrum ac lobortis"
-    },
-    {
-        "startDate": "2022-01-22 16:42:36",
-        "endDate": "2022-01-23 08:01:33",
-        "title": "lacinia aenean sit amet justo"
-    },
-    {
-        "startDate": "2022-01-22 08:15:26",
-        "endDate": "2022-01-23 23:45:06",
-        "title": "semper interdum mauris"
-    },
-    {
-        "startDate": "2022-01-22 06:39:57",
-        "endDate": "2022-01-23 13:00:35",
-        "title": "sit amet nunc"
-    },
-    {
-        "startDate": "2022-01-22 14:38:14",
-        "endDate": "2022-01-23 11:09:34",
-        "title": "elit proin"
-    },
-    {
-        "startDate": "2022-01-22 07:52:20",
-        "endDate": "2022-01-23 06:29:09",
-        "title": "justo nec condimentum"
-    },
-    {
-        "startDate": "2022-01-22 22:13:08",
-        "endDate": "2022-01-23 22:00:38",
-        "title": "ultrices phasellus id"
-    },
-    {
-        "startDate": "2022-01-22 18:42:20",
-        "endDate": "2022-01-23 07:03:39",
-        "title": "dignissim vestibulum vestibulum ante ipsum"
-    },
-    {
-        "startDate": "2022-01-22 21:23:42",
-        "endDate": "2022-01-23 17:17:46",
-        "title": "pharetra magna vestibulum aliquet"
-    },
-    {
-        "startDate": "2022-01-22 09:09:11",
-        "endDate": "2022-01-23 06:57:49",
-        "title": "consectetuer adipiscing elit proin risus"
-    },
-    {
-        "startDate": "2022-01-22 06:52:14",
-        "endDate": "2022-01-23 15:40:22",
-        "title": "et ultrices posuere"
-    },
-    {
-        "startDate": "2022-01-22 13:38:05",
-        "endDate": "2022-01-23 16:37:28",
-        "title": "eu interdum eu tincidunt in"
-    },
-    {
-        "startDate": "2022-01-22 11:57:10",
-        "endDate": "2022-01-23 12:09:04",
-        "title": "quis turpis sed ante vivamus"
-    },
-    {
-        "startDate": "2022-01-22 09:49:12",
-        "endDate": "2022-01-23 15:51:03",
-        "title": "primis in faucibus orci"
-    },
-    {
-        "startDate": "2022-01-22 17:43:28",
-        "endDate": "2022-01-23 07:25:03",
-        "title": "aliquet ultrices erat"
-    },
-    {
-        "startDate": "2022-01-22 09:39:25",
-        "endDate": "2022-01-23 01:35:21",
-        "title": "magna ac consequat metus"
-    },
-    {
-        "startDate": "2022-01-22 01:11:05",
-        "endDate": "2022-01-23 02:31:47",
-        "title": "sapien urna pretium nisl ut volutpat"
-    }
-]
+{
+    "SampleData": [
+        {
+            "startDate": "2022-01-21 19:00:00",
+            "endDate": "2022-01-21 20:00:00",
+            "title": "Opening Ceremony"
+        },
+        {
+            "startDate": "2022-01-21 20:00:00",
+            "endDate": "2022-01-21 21:00:00",
+            "title": "Fireside Chat"
+        },
+        {
+            "startDate": "2022-01-21 20:45:00",
+            "endDate": "2022-01-21 21:30:00",
+            "title": "Getting Started with OVHcloud"
+        },
+        {
+            "startDate": "2022-01-21 21:00:00",
+            "endDate": "2022-01-23 09:00:00",
+            "title": "Hacking Starts"
+        },
+        {
+            "startDate": "2022-01-21 21:00:00",
+            "endDate": "2022-01-21 21:45:00",
+            "title": "Team Making"
+        },
+        {
+            "startDate": "2022-01-21 21:15:00",
+            "endDate": "2022-01-21 22:00:00",
+            "title": "Huawei Ascend AI Workshop"
+        },
+        {
+            "startDate": "2022-01-21 22:00:00",
+            "endDate": "2022-01-21 23:00:00",
+            "title": "Hackathon Tools"
+        },
+        {
+            "startDate": "2022-01-21 23:00:00",
+            "endDate": "2022-01-21 23:00:00",
+            "title": "Game Tournament"
+        },
+        {
+            "startDate": "2022-01-21 23:00:00",
+            "endDate": "2022-01-21 23:59:00",
+            "title": "Checking-In Form 1 Due - Team Declaration"
+        },
+        {
+            "startDate": "2022-01-21 23:00:00",
+            "endDate": "2022-01-22 01:45:01",
+            "title": "Midnight Noodles & Trivia"
+        },
+        {
+            "startDate": "2022-01-21 21:00:00",
+            "endDate": "2022-01-21 23:59P:13",
+            "title": "Guessing Games"
+        },
+        {
+            "startDate": "2022-01-22 00:30:00",
+            "endDate": "2022-01-22 23:26:13",
+            "title": "Guessing Games"
+        },
+        {
+            "startDate": "2022-01-22 08:00:00",
+            "endDate": "2022-01-22 09:00:00",
+            "title": "Coffee Hangout"
+        },
+        {
+            "startDate": "2022-01-22 09:00:00",
+            "endDate": "2022-01-22 11:00:00",
+            "title": "Digging for Gold in Network Data Using Machine Learning"
+        },
+        {
+            "startDate": "2022-01-22 10:00:00",
+            "endDate": "2022-01-22 12:00:00",
+            "title": "Sponsorship Booths"
+        },
+        {
+            "startDate": "2022-01-22 11:00:00",
+            "endDate": "2022-01-22 12:30:00",
+            "title": "Game-Making with Python"
+        },
+        {
+            "startDate": "2022-01-22 12:30:00",
+            "endDate": "2022-01-22 13:15:00",
+            "title": "Making a Resume in HTML/CSS"
+        },
+        {
+            "startDate": "2022-01-22 12:00:00",
+            "endDate": "2022-01-22 13:45:00",
+            "title": "Getting Started With Twilio"
+        },
+        {
+            "startDate": "2022-01-22 13:00:00",
+            "endDate": "2022-01-22 13:30:00",
+            "title": "Link Apartments by Brivia Group Workshop"
+        },
+        {
+            "startDate": "2022-01-22 13:30:00",
+            "endDate": "2022-01-22 14:30:00",
+            "title": "Navigating the Startup Ecosystem as a Student"
+        },
+        {
+            "startDate": "2022-01-22 14:00:00",
+            "endDate": "2022-01-22 16:00:00",
+            "title": "Speed networking"
+        },
+        {
+            "startDate": "2022-01-22 16:00:00",
+            "endDate": "2022-01-22 17:30:00",
+            "title": "Introduction to Design"
+        },
+        {
+            "startDate": "2022-01-22 17:00:00",
+            "endDate": "2022-01-22 18:30:00",
+            "title": "Founding a Startup at McGill"
+        },
+        {
+            "startDate": "2022-01-22 17:00:00",
+            "endDate": "2022-01-22 17:30:00",
+            "title": "Mug Cakes"
+        },
+        {
+            "startDate": "2022-01-22 17:30:00",
+            "endDate": "2022-01-22 18:30:00",
+            "title": "Math & Logic Competition"
+        },
+        {
+            "startDate": "2022-01-22 18:30:00",
+            "endDate": "2022-01-22 19:30:00",
+            "title": "Dinner and Trivia"
+        },
+        {
+            "startDate": "2022-01-22 19:30:00",
+            "endDate": "2022-01-22 20:30:00",
+            "title": "Paint With MLH and Bob Ross"
+        },
+        {
+            "startDate": "2022-01-22 19:50:00",
+            "endDate": "2022-01-22 20:00:00",
+            "title": "Checking-In Form 2 Due - Project Declaration"
+        },
+        {
+            "startDate": "2022-01-22 21:30:00",
+            "endDate": "2022-01-22 22:15:00",
+            "title": "Typing Races"
+        },
+        {
+            "startDate": "2022-01-22 23:00:00",
+            "endDate": "2022-01-22 00:30:00",
+            "title": "Game Tournament"
+        },
+        {
+            "startDate": "2022-01-22 23:59:00",
+            "endDate": "2022-01-23 03:59:00",
+            "title": "Midnight Noodles & Movie"
+        },
+        {
+            "startDate": "2022-01-23 08:00:00",
+            "endDate": "2022-01-23 09:00:00",
+            "title": "Coffee Hangout"
+        },
+        {
+            "startDate": "2022-01-23 08:30:00",
+            "endDate": "2022-01-23 09:00:00",
+            "title": "Hacking Ends"
+        },
+        {
+            "startDate": "2022-01-23 09:30:00",
+            "endDate": "2022-01-23 10:30:00",
+            "title": "Scavenger Hunt"
+        },
+        {
+            "startDate": "2022-01-23 11:00:00",
+            "endDate": "2022-01-23 13:00:00",
+            "title": "Demo"
+        },
+        {
+            "startDate": "2022-01-23 14:30:00",
+            "endDate": "2022-01-23 15:15:00",
+            "title": "Closing Ceremony"
+        }
+    ]
+}
