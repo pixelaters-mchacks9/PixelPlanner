@@ -18,7 +18,7 @@ import {
 import { appointments } from '../appointments';
 const jsondata = require('../data/sample_data_1.json')
 const sampleData = jsondata.SampleData
-
+import Header from './Header';
 export default class Schedule extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -56,6 +56,8 @@ export default class Schedule extends React.PureComponent {
     const { currentDate, data, currentViewName } = this.state;
 
     return (
+      <>
+      <Header></Header>
       <Paper>
         <Scheduler
           data={data}
@@ -95,6 +97,7 @@ export default class Schedule extends React.PureComponent {
           <ViewSwitcher />
         </Scheduler>
       </Paper>
+      </>
     );
   }
 }
