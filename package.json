@@ -1,0 +1,23 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "A React application",
+  "engines": {
+    "node": "16.13.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "cd client && npm start",
+    "build": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixelaters-mchacks9/front-end.git"
+  },
+  "author": "Emilia Krichevsky Angela Sposato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pixelaters-mchacks9/front-end/issues"
+  },
+  "homepage": "https://github.com/pixelaters-mchacks9/front-end#readme"
+}
