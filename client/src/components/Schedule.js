@@ -35,6 +35,7 @@ const BasicLayout = ({ onFieldChange, appointmentData, ...restProps }) => {
     onFieldChange({ customField: nextValue });
   };
 
+
   return (
     <AppointmentForm.BasicLayout
       appointmentData={appointmentData}
@@ -50,7 +51,8 @@ const BasicLayout = ({ onFieldChange, appointmentData, ...restProps }) => {
         onValueChange={onCustomFieldChange}
         placeholder="Location"
       />
-      <AppointmentForm.Label
+
+      {/* <AppointmentForm.Label
         text="Owner"
         type="title"
       />
@@ -58,7 +60,7 @@ const BasicLayout = ({ onFieldChange, appointmentData, ...restProps }) => {
         value={appointmentData.customField}
         onValueChange={onCustomFieldChange}
         placeholder="Owner"
-      />
+      /> */}
     </AppointmentForm.BasicLayout>
   );
 };
