@@ -23,7 +23,7 @@
   "rules": {
     ////////// Possible Errors //////////
     "no-console": "off",
-    "no-unused-vars": "warn",
+     
     "no-undef": "off",
     "no-extra-parens": "warn",
     // "indent": ["error", 2],
