@@ -23,10 +23,13 @@ export default class Schedule extends Component {
     this.state = {
       data: sampleData,
       currentDate: '2022-01-22',
-      currentViewName: 'mchacks'
+      currentViewName: 'mchacks',
+      events: []
     };
+
     this.defaultDate = "2022-01-22"
     this.commitChanges = this.commitChanges.bind(this);
+
     this.currentViewNameChange = (currentViewName) => {
       this.setState({ currentViewName });
     };
