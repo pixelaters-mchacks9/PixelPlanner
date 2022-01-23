@@ -51,16 +51,6 @@ const BasicLayout = ({ onFieldChange, appointmentData, ...restProps }) => {
         onValueChange={onCustomFieldChange}
         placeholder="Location"
       />
-
-      {/* <AppointmentForm.Label
-        text="Owner"
-        type="title"
-      />
-      <AppointmentForm.TextEditor
-        value={appointmentData.customField}
-        onValueChange={onCustomFieldChange}
-        placeholder="Owner"
-      /> */}
     </AppointmentForm.BasicLayout>
   );
 };
@@ -142,7 +132,11 @@ export default class Schedule extends Component {
               showOpenButton
               showDeleteButton
             />
-            <AppointmentForm />
+            <AppointmentForm
+            basicLayoutComponent={BasicLayout}
+            textEditorComponent={TextEditor}
+            messages={messages}
+            />
             <Toolbar />
             <ViewSwitcher />
             <DateNavigator />
