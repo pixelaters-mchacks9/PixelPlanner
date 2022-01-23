@@ -30,7 +30,7 @@ export default class Dropdown extends Component {
           />
           Menu
         </Button>
-        {this.state.open && (
+        {this.state.open && 
           <List
             style={{
               position: 'absolute',
@@ -59,7 +59,7 @@ export default class Dropdown extends Component {
               Logout
             </ListItem>
           </List>
-        )}
+        }
       </div>
     );
   }
