@@ -1,10 +1,9 @@
 import * as React from 'react';
 import Schedule from './Schedule';
-import AppBar from './AppBar';
+
 
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-
-import { styleReset, List, ListItem, Divider } from 'react95';
+import { styleReset, List, ListItem, Divider, Bar, Hourglass, AppBar, Toolbar, TextField, Button, } from 'react95';
 // pick a theme of your choice
 import original from "react95/dist/themes/original";
 // original Windows95 font (optionally)
@@ -33,16 +32,84 @@ const GlobalStyles = createGlobalStyle`
 export default class Home extends React.PureComponent {
   constructor(props) {
     super(props);
+    this.state = {
+      loading: true,
+      open: false
+    }
+    this.hideLoading = this.hideLoading.bind(this);
+    this.openMenu = this.openMenu.bind(this);
   }
+
+  hideLoading() {
+    this.setState({ loading: false });
+  }
+
+  openMenu(open) {
+    this.setState({ open: open });
+  }
+
+  componentDidMount() {
+    this.hideLoading();
+  }
+
   render() {
     return (
-      <div>
+      <div >
         <GlobalStyles />
         <ThemeProvider theme={original}>
-        <AppBar> </AppBar>
-        <Schedule></Schedule>
+          {this.state.loading === true ?
+            <div className="flex items-center justify-center">
+              <Hourglass size={40} />
+            </div>
+            :
+            <main >
+              <AppBar style={{ zIndex: 3, marginBottom: 4 }}>
+                <Toolbar style={{ justifyContent: 'space-between' }}>
+                  <div style={{ position: 'relative', display: 'inline-block' }}>
+                    <Button
+                      onClick={() => this.openMenu(!this.state.open)}
+                      active={open}
+                      style={{ fontWeight: 'bold' }}
+                    >
+                      Menu
+                    </Button>
+                    {this.state.open && (
+                      <List
+                        style={{
+                          position: 'absolute',
+                          left: '0',
+                          top: '100%'
+                        }}
+                        onClick={() => this.openMenu(false)}
+                      >
+                        <ListItem>
+                          <span role='img' aria-label='👨‍💻'>
+                            👨‍💻
+                          </span>
+                          Profile
+                        </ListItem>
+                        <ListItem>
+                          <span role='img' aria-label='🐦'>
+                          🐦
+                          </span>
+                          McHacks
+                        </ListItem>
+                        <Divider />
+                        <ListItem disabled>
+                          <span role='img' aria-label='🔙'>
+                            🔙
+                          </span>
+                          Logout
+                        </ListItem>
+                      </List>
+                    )}
+                  </div>
+                </Toolbar>
+              </AppBar>
+              <Schedule style={{ marginTop: 6 }}></Schedule>
+            </main>
+          }
         </ThemeProvider>
-
       </div>
     );
   }
