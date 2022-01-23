@@ -3,7 +3,7 @@ import Schedule from './Schedule';
 import Dropdown from './Dropdown';
 
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { styleReset, List, ListItem, Divider, Bar, Hourglass, AppBar, Toolbar, TextField, Button, } from 'react95';
+import { styleReset, Hourglass, AppBar, Toolbar } from 'react95';
 // pick a theme of your choice
 import original from "react95/dist/themes/original";
 // original Windows95 font (optionally)
@@ -44,7 +44,6 @@ export default class Home extends Component {
     this.setState({ loading: false });
   }
 
-
   // Call method to change state appropriately
   componentDidMount() {
     this.hideLoading();
@@ -69,7 +68,7 @@ export default class Home extends Component {
                   />
                 </Toolbar>
               </AppBar>
-              <Schedule style={{ marginTop: 20 }}></Schedule>
+              <Schedule></Schedule>
             </main>
           }
         </ThemeProvider>
