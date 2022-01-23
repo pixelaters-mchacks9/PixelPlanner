@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pixelaters-mchacks9/front-end/issues"
   },
-  "homepage": "https://github.com/pixelaters-mchacks9/front-end#readme"
+  "homepage": "https://github.com/pixelaters-mchacks9/front-end#readme",
+  "dependencies": {
+    "react-router-dom": "^6.2.1"
+  }
 }
