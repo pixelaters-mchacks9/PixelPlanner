@@ -44,6 +44,7 @@ export default class Home extends Component {
     this.setState({ loading: false });
   }
 
+
   // Call method to change state appropriately
   componentDidMount() {
     this.hideLoading();
@@ -59,7 +60,7 @@ export default class Home extends Component {
               <Hourglass size={40} />
             </div>
             :
-            <main style={{ background : "#181a1b"}}>
+            <main style={{ background : "#181a1b", padding: '0.5rem'}}>
               <AppBar style={{ zIndex: 3, paddingBottom: 4, marginBottom: 4}}>
                 <Toolbar style={{ justifyContent: 'space-between' }}>
                   <Dropdown 
@@ -68,7 +69,7 @@ export default class Home extends Component {
                   />
                 </Toolbar>
               </AppBar>
-              <Schedule loading={this.state.loading}></Schedule>
+              <Schedule ></Schedule>
             </main>
           }
         </ThemeProvider>
