@@ -14,12 +14,54 @@ import {
   DateNavigator,
   TodayButton
 } from '@devexpress/dx-react-scheduler-material-ui';
+
 const jsondata = require('../data/sample_data_1.json')
 const sampleData = jsondata.SampleData
 import Header from './Header';
 
-import styled from 'styled-components';
-import { Button } from 'react95';
+const messages = {
+  moreInformationLabel: '',
+};
+
+const TextEditor = (props) => {
+  // eslint-disable-next-line react/destructuring-assignment
+  if (props.type === 'multilineTextEditor') {
+    return null;
+  } return <AppointmentForm.TextEditor {...props} />;
+};
+
+const BasicLayout = ({ onFieldChange, appointmentData, ...restProps }) => {
+  const onCustomFieldChange = (nextValue) => {
+    onFieldChange({ customField: nextValue });
+  };
+
+  return (
+    <AppointmentForm.BasicLayout
+      appointmentData={appointmentData}
+      onFieldChange={onFieldChange}
+      {...restProps}
+    >
+      <AppointmentForm.Label
+        text="Location"
+        type="title"
+      />
+      <AppointmentForm.TextEditor
+        value={appointmentData.customField}
+        onValueChange={onCustomFieldChange}
+        placeholder="Location"
+      />
+      <AppointmentForm.Label
+        text="Owner"
+        type="title"
+      />
+      <AppointmentForm.TextEditor
+        value={appointmentData.customField}
+        onValueChange={onCustomFieldChange}
+        placeholder="Owner"
+      />
+    </AppointmentForm.BasicLayout>
+  );
+};
 
 export default class Schedule extends React.PureComponent {
   constructor(props) {
@@ -92,7 +134,11 @@ export default class Schedule extends React.PureComponent {
             showOpenButton
             showDeleteButton
           />
-          <AppointmentForm />
+          <AppointmentForm
+            basicLayoutComponent={BasicLayout}
+            textEditorComponent={TextEditor}
+            messages={messages}
+          />
           <Toolbar />
           <DateNavigator />
           <TodayButton />
