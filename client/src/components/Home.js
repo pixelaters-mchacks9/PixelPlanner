@@ -5,7 +5,7 @@ import Schedule from './Schedule';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { styleReset, List, ListItem, Divider, Bar, Hourglass, AppBar, Toolbar, TextField, Button, } from 'react95';
 // pick a theme of your choice
-import tokyoDark from "react95/dist/themes/tokyoDark";
+import original from "react95/dist/themes/original";
 // original Windows95 font (optionally)
 import ms_sans_serif from "react95/dist/fonts/ms_sans_serif.woff2";
 import ms_sans_serif_bold from "react95/dist/fonts/ms_sans_serif_bold.woff2";
@@ -56,14 +56,14 @@ export default class Home extends React.PureComponent {
     return (
       <div >
         <GlobalStyles />
-        <ThemeProvider theme={tokyoDark}>
+        <ThemeProvider theme={original}>
           {this.state.loading === true ?
             <div className="flex items-center justify-center">
               <Hourglass size={40} />
             </div>
             :
             <main style={{ background : "#181a1b"}}>
-              <AppBar style={{ zIndex: 3, marginBottom: 4 }}>
+              <AppBar style={{ zIndex: 3, paddingBottom: 4, marginBottom: 4}}>
                 <Toolbar style={{ justifyContent: 'space-between' }}>
                   <div style={{ position: 'relative', display: 'inline-block' }}>
                     <Button
@@ -111,7 +111,7 @@ export default class Home extends React.PureComponent {
                   </div>
                 </Toolbar>
               </AppBar>
-              <Schedule style={{ marginTop: 6 }}></Schedule>
+              <Schedule style={{ marginTop: 20 }}></Schedule>
             </main>
           }
         </ThemeProvider>

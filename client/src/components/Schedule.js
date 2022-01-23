@@ -53,7 +53,7 @@ export default class Schedule extends React.PureComponent {
     const { defaultDate, data, currentViewName } = this.state;
 
     return (
-      <Paper>
+      <Paper elevation={3}>
         <Scheduler
           data={data}
           height={660}
