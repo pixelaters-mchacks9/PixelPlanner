@@ -10,7 +10,9 @@ import {
   AppointmentTooltip,
   ConfirmationDialog,
   ViewSwitcher,
-  Toolbar
+  Toolbar,
+  TodayButton,
+  DateNavigator
 } from '@devexpress/dx-react-scheduler-material-ui';
 
 import LoadingBar from './LoadingBar'
@@ -96,6 +98,8 @@ export default class Schedule extends Component {
             <AppointmentForm />
             <Toolbar />
             <ViewSwitcher />
+            <DateNavigator />
+            <TodayButton />
           </Scheduler>
         </Paper>
       </div>
