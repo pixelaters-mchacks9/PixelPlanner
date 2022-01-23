@@ -97,7 +97,7 @@ export default class Home extends React.PureComponent {
                           <span role='img' aria-label='🐦'>
                             🐦
                           </span>
-                          McHacks
+                           <a href="https://www.mchacks.ca/" target='_blank' rel="noreferrer">  McHacks </a>
                         </ListItem>
                         <Divider />
                         <ListItem disabled>
