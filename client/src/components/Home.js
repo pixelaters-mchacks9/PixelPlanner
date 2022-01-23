@@ -1,6 +1,6 @@
-import * as React from 'react';
+import { Component } from "react";
 import Schedule from './Schedule';
-
+import Dropdown from './Dropdown';
 
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { styleReset, List, ListItem, Divider, Bar, Hourglass, AppBar, Toolbar, TextField, Button, } from 'react95';
@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
   ${styleReset}
 `;
 
-export default class Home extends React.PureComponent {
+export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,17 +37,15 @@ export default class Home extends React.PureComponent {
       open: false
     }
     this.hideLoading = this.hideLoading.bind(this);
-    this.openMenu = this.openMenu.bind(this);
   }
 
+  //Hide the Hourglass
   hideLoading() {
     this.setState({ loading: false });
   }
 
-  openMenu(open) {
-    this.setState({ open: open });
-  }
 
+  // Call method to change state appropriately
   componentDidMount() {
     this.hideLoading();
   }
@@ -65,50 +63,10 @@ export default class Home extends React.PureComponent {
             <main style={{ background : "#181a1b"}}>
               <AppBar style={{ zIndex: 3, paddingBottom: 4, marginBottom: 4}}>
                 <Toolbar style={{ justifyContent: 'space-between' }}>
-                  <div style={{ position: 'relative', display: 'inline-block' }}>
-                    <Button
-                      onClick={() => this.openMenu(!this.state.open)}
-                      
-                      style={{ fontWeight: 'bold' }}
-                    >
-                      <img
-                        src={'./logo192.png'}
-                        alt='Pixel Planner logo'
-                        style={{ height: '20px', marginRight: 4 }}
-                      />
-                      Menu
-                    </Button>
-                    {this.state.open && (
-                      <List
-                        style={{
-                          position: 'absolute',
-                          left: '0',
-                          top: '100%'
-                        }}
-                        onClick={() => this.openMenu(false)}
-                      >
-                        <ListItem>
-                          <span role='img' aria-label='👨‍💻'>
-                            👨‍💻
-                          </span>
-                          Profile
-                        </ListItem>
-                        <ListItem>
-                          <span role='img' aria-label='🐦'>
-                            🐦
-                          </span>
-                           <a href="https://www.mchacks.ca/" target='_blank' rel="noreferrer">  McHacks </a>
-                        </ListItem>
-                        <Divider />
-                        <ListItem disabled>
-                          <span role='img' aria-label='🔙'>
-                            🔙
-                          </span>
-                          Logout
-                        </ListItem>
-                      </List>
-                    )}
-                  </div>
+                  <Dropdown 
+                    open={this.state.open}
+                    onMenuChange={this.onMenuChange}
+                  />
                 </Toolbar>
               </AppBar>
               <Schedule style={{ marginTop: 20 }}></Schedule>
