@@ -4,217 +4,253 @@
             "id": 0,
             "startDate": "2022-01-21 19:00:00",
             "endDate": "2022-01-21 20:00:00",
-            "title": "Opening Ceremony"
+            "title": "Opening Ceremony",
+            "location": "Zoom"
         },
         {
             "id": 1,
             "startDate": "2022-01-21 20:00:00",
             "endDate": "2022-01-21 21:00:00",
-            "title": "Fireside Chat"
+            "title": "Fireside Chat",
+            "location": "Zoom"
         },
         {
             "id": 2,
             "startDate": "2022-01-21 20:45:00",
             "endDate": "2022-01-21 21:30:00",
-            "title": "Getting Started with OVHcloud"
+            "title": "Getting Started with OVHcloud",
+            "location": "Zoom"
         },
         {
             "id": 3,
             "startDate": "2022-01-21 21:00:00",
             "endDate": "2022-01-23 09:00:00",
-            "title": "Hacking Starts"
+            "title": "Hacking Starts",
+            "location": "Hack-From-Home"
         },
         {
             "id": 4,
             "startDate": "2022-01-21 21:00:00",
             "endDate": "2022-01-21 21:45:00",
-            "title": "Team Making"
+            "title": "Team Making",
+            "location": "Discord/Google Slides"
         },
         {
             "id": 5,
             "startDate": "2022-01-21 21:15:00",
             "endDate": "2022-01-21 22:00:00",
-            "title": "Huawei Ascend AI Workshop"
+            "title": "Huawei Ascend AI Workshop",
+            "location": "Zoom"
         },
         {
             "id": 6,
             "startDate": "2022-01-21 22:00:00",
             "endDate": "2022-01-21 23:00:00",
-            "title": "Hackathon Tools"
+            "title": "Hackathon Tools",
+            "location": "Discord"
         },
         {
             "id": 7,
             "startDate": "2022-01-21 23:00:00",
             "endDate": "2022-01-21 23:00:00",
-            "title": "Game Tournament"
+            "title": "Game Tournament",
+            "location": "Discord"
         },
         {
             "id": 8,
             "startDate": "2022-01-21 23:00:00",
             "endDate": "2022-01-21 23:59:00",
-            "title": "Checking-In Form 1 Due - Team Declaration"
+            "title": "Checking-In Form 1 Due - Team Declaration",
+            "location": "Google Forms"
         },
         {
             "id": 9,
             "startDate": "2022-01-21 23:00:00",
             "endDate": "2022-01-22 01:45:01",
-            "title": "Midnight Noodles & Trivia"
+            "title": "Midnight Noodles & Trivia",
+            "location": "Discord"
         },
         {
             "id": 10,
             "startDate": "2022-01-21 21:00:00",
             "endDate": "2022-01-21 23:59:13",
-            "title": "Guessing Games"
+            "title": "Guessing Games",
+            "location": "Discord"
         },
         {
             "id": 11,
             "startDate": "2022-01-23 00:00:10",
             "endDate": "2022-01-22 09:00:13",
-            "title": "Guessing Games"
+            "title": "Guessing Games",
+            "location": "Discord"
         },
         {
             "id": 12,
             "startDate": "2022-01-22 08:00:00",
             "endDate": "2022-01-22 09:00:00",
-            "title": "Coffee Hangout"
+            "title": "Coffee Hangout",
+            "location": "Discord"
         },
         {
             "id": 13,
             "startDate": "2022-01-22 09:00:00",
             "endDate": "2022-01-22 11:00:00",
-            "title": "Digging for Gold in Network Data Using Machine Learning"
+            "title": "Digging for Gold in Network Data Using Machine Learning",
+            "location": "Zoom"
         },
         {
             "id": 14,
             "startDate": "2022-01-22 10:00:00",
             "endDate": "2022-01-22 12:00:00",
-            "title": "Sponsorship Booths"
+            "title": "Sponsorship Booths",
+            "location": "Discord"
         },
         {
             "id": 15,
             "startDate": "2022-01-22 11:00:00",
             "endDate": "2022-01-22 12:30:00",
-            "title": "Game-Making with Python"
+            "title": "Game-Making with Python",
+            "location": "Zoom"
         },
         {
             "id": 16,
             "startDate": "2022-01-22 12:30:00",
             "endDate": "2022-01-22 13:15:00",
-            "title": "Making a Resume in HTML/CSS"
+            "title": "Making a Resume in HTML/CSS",
+            "location": "Zoom"
         },
         {
             "id": 17,
             "startDate": "2022-01-22 12:00:00",
             "endDate": "2022-01-22 13:45:00",
-            "title": "Getting Started With Twilio"
+            "title": "Getting Started With Twilio",
+            "location": "Zoom"
         },
         {
             "id": 18,
             "startDate": "2022-01-22 13:00:00",
             "endDate": "2022-01-22 13:30:00",
-            "title": "Link Apartments by Brivia Group Workshop"
+            "title": "Link Apartments by Brivia Group Workshop",
+            "location": "Zoom"
         },
         {
             "id": 19,
             "startDate": "2022-01-22 13:30:00",
             "endDate": "2022-01-22 14:30:00",
-            "title": "Navigating the Startup Ecosystem as a Student"
+            "title": "Navigating the Startup Ecosystem as a Student",
+            "location": "Zoom"
         },
         {
             "id": 20,
             "startDate": "2022-01-22 14:00:00",
             "endDate": "2022-01-22 16:00:00",
-            "title": "Speed networking"
+            "title": "Speed networking",
+            "location": "Zoom"
         },
         {
             "id": 21,
             "startDate": "2022-01-22 16:00:00",
             "endDate": "2022-01-22 17:30:00",
-            "title": "Introduction to Design"
+            "title": "Introduction to Design",
+            "location": "Zoom"
         },
         {
             "id": 22,
             "startDate": "2022-01-22 17:00:00",
             "endDate": "2022-01-22 18:30:00",
-            "title": "Founding a Startup at McGill"
+            "title": "Founding a Startup at McGill",
+            "location": "Zoom"
         },
         {
             "id": 23,
             "startDate": "2022-01-22 17:00:00",
             "endDate": "2022-01-22 17:30:00",
-            "title": "Mug Cakes"
+            "title": "Mug Cakes",
+            "location": "Discord"
         },
         {
             "id": 24,
             "startDate": "2022-01-22 17:30:00",
             "endDate": "2022-01-22 18:30:00",
-            "title": "Math & Logic Competition"
+            "title": "Math & Logic Competition",
+            "location": "Discord"
         },
         {
             "id": 25,
             "startDate": "2022-01-22 18:30:00",
             "endDate": "2022-01-22 19:30:00",
-            "title": "Dinner and Trivia"
+            "title": "Dinner and Trivia",
+            "location": "Discord"
         },
         {
             "id": 26,
             "startDate": "2022-01-22 19:30:00",
             "endDate": "2022-01-22 20:30:00",
-            "title": "Paint With MLH and Bob Ross"
+            "title": "Paint With MLH and Bob Ross",
+            "location": "Discord"
         },
         {
             "id": 27,
             "startDate": "2022-01-22 19:50:00",
             "endDate": "2022-01-22 20:00:00",
-            "title": "Checking-In Form 2 Due - Project Declaration"
+            "title": "Checking-In Form 2 Due - Project Declaration",
+            "location": "Google Forms"
         },
         {
             "id": 28,
             "startDate": "2022-01-22 21:30:00",
             "endDate": "2022-01-22 22:15:00",
-            "title": "Typing Races"
+            "title": "Typing Races",
+            "location": "Discord"
         },
         {
             "id": 29,
             "startDate": "2022-01-22 23:00:00",
             "endDate": "2022-01-22 00:30:00",
-            "title": "Game Tournament"
+            "title": "Game Tournament",
+            "location": "Discord"
         },
         {
             "id": 30,
             "startDate": "2022-01-22 23:59:00",
             "endDate": "2022-01-23 03:59:00",
-            "title": "Midnight Noodles & Movie"
+            "title": "Midnight Noodles & Movie",
+            "location": "Discord"
         },
         {
             "id": 31,
             "startDate": "2022-01-23 08:00:00",
             "endDate": "2022-01-23 09:00:00",
-            "title": "Coffee Hangout"
+            "title": "Coffee Hangout",
+            "location": "Discord"
         },
         {
             "id": 32,
             "startDate": "2022-01-23 08:30:00",
             "endDate": "2022-01-23 09:00:00",
-            "title": "Hacking Ends"
+            "title": "Hacking Ends",
+            "location": "Hack-From-Home"
         },
         {
             "id": 33,
             "startDate": "2022-01-23 09:30:00",
             "endDate": "2022-01-23 10:30:00",
-            "title": "Scavenger Hunt"
+            "title": "Scavenger Hunt",
+            "location": "Discord"
         },
         {
             "id": 34,
             "startDate": "2022-01-23 11:00:00",
             "endDate": "2022-01-23 13:00:00",
-            "title": "Demo"
+            "title": "Demo",
+            "location": "Zoom"
         },
         {
             "id": 35,
             "startDate": "2022-01-23 14:30:00",
             "endDate": "2022-01-23 15:15:00",
-            "title": "Closing Ceremony"
+            "title": "Closing Ceremony",
+            "location": "Zoom"
         }
     ]
 }
