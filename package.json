@@ -1,7 +1,10 @@
 {
   "name": "front-end",
   "version": "1.0.0",
-  "description": "",
+  "description": "A React application",
+  "engines": {
+    "node": "16.13.x"
+  },
   "main": "index.js",
   "scripts": {
     "build": "cd client && npm install && npm run build"
@@ -15,8 +18,5 @@
   "bugs": {
     "url": "https://github.com/pixelaters-mchacks9/front-end/issues"
   },
-  "homepage": "https://github.com/pixelaters-mchacks9/front-end#readme",
-  "dependencies": {
-    "react-router-dom": "^6.2.1"
-  }
+  "homepage": "https://github.com/pixelaters-mchacks9/front-end#readme"
 }
