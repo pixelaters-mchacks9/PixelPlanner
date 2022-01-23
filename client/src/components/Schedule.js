@@ -13,6 +13,7 @@ import {
   Toolbar
 } from '@devexpress/dx-react-scheduler-material-ui';
 
+import LoadingBar from './LoadingBar'
 const jsondata = require('../data/sample_data_1.json')
 const sampleData = jsondata.SampleData
 
@@ -80,6 +81,9 @@ export default class Schedule extends Component {
               startDayHour={3}
               endDayHour={20}
             />
+            {this.props.loading === false ? null :
+              <LoadingBar />
+            }
             <ConfirmationDialog />
             <Appointments />
             <AppointmentTooltip

@@ -68,7 +68,7 @@ export default class Home extends Component {
                   />
                 </Toolbar>
               </AppBar>
-              <Schedule></Schedule>
+              <Schedule loading={this.state.loading}></Schedule>
             </main>
           }
         </ThemeProvider>
