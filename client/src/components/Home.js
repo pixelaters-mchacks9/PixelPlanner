@@ -68,7 +68,7 @@ export default class Home extends React.PureComponent {
                   <div style={{ position: 'relative', display: 'inline-block' }}>
                     <Button
                       onClick={() => this.openMenu(!this.state.open)}
-                      active={open}
+                      
                       style={{ fontWeight: 'bold' }}
                     >
                       <img
