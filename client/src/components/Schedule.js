@@ -40,8 +40,8 @@ export default class Schedule extends Component {
         data = [...data, { id: startingAddedId, ...added }];
       }
       if (changed) {
-        data = data.map((event) => (
-          changed[event.id] ? { ...event, ...changed[event.id] } : event));
+        data = data.map((event) => 
+          changed[event.id] ? { ...event, ...changed[event.id] } : event);
       }
       if (deleted !== undefined) {
         data = data.filter(event => event.id !== deleted);
