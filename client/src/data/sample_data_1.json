@@ -5,252 +5,288 @@
             "startDate": "2022-01-21 19:00:00",
             "endDate": "2022-01-21 20:00:00",
             "title": "Opening Ceremony",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 1,
             "startDate": "2022-01-21 20:00:00",
             "endDate": "2022-01-21 21:00:00",
             "title": "Fireside Chat",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 2,
             "startDate": "2022-01-21 20:45:00",
             "endDate": "2022-01-21 21:30:00",
             "title": "Getting Started with OVHcloud",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 3,
             "startDate": "2022-01-21 21:00:00",
             "endDate": "2022-01-23 09:00:00",
             "title": "Hacking Starts",
-            "location": "Hack-From-Home"
+            "location": "Hack-From-Home",
+            "owner": "McHacks"
         },
         {
             "id": 4,
             "startDate": "2022-01-21 21:00:00",
             "endDate": "2022-01-21 21:45:00",
             "title": "Team Making",
-            "location": "Discord/Google Slides"
+            "location": "Discord/Google Slides",
+            "owner": "McHacks"
         },
         {
             "id": 5,
             "startDate": "2022-01-21 21:15:00",
             "endDate": "2022-01-21 22:00:00",
             "title": "Huawei Ascend AI Workshop",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 6,
             "startDate": "2022-01-21 22:00:00",
             "endDate": "2022-01-21 23:00:00",
             "title": "Hackathon Tools",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 7,
             "startDate": "2022-01-21 23:00:00",
             "endDate": "2022-01-21 23:00:00",
             "title": "Game Tournament",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 8,
             "startDate": "2022-01-21 23:00:00",
             "endDate": "2022-01-21 23:59:00",
             "title": "Checking-In Form 1 Due - Team Declaration",
-            "location": "Google Forms"
+            "location": "Google Forms",
+            "owner": "McHacks"
         },
         {
             "id": 9,
             "startDate": "2022-01-21 23:00:00",
             "endDate": "2022-01-22 01:45:01",
             "title": "Midnight Noodles & Trivia",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 10,
             "startDate": "2022-01-21 21:00:00",
             "endDate": "2022-01-21 23:59:13",
             "title": "Guessing Games",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 11,
             "startDate": "2022-01-23 00:00:10",
             "endDate": "2022-01-22 09:00:13",
             "title": "Guessing Games",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 12,
             "startDate": "2022-01-22 08:00:00",
             "endDate": "2022-01-22 09:00:00",
             "title": "Coffee Hangout",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 13,
             "startDate": "2022-01-22 09:00:00",
             "endDate": "2022-01-22 11:00:00",
             "title": "Digging for Gold in Network Data Using Machine Learning",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 14,
             "startDate": "2022-01-22 10:00:00",
             "endDate": "2022-01-22 12:00:00",
             "title": "Sponsorship Booths",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 15,
             "startDate": "2022-01-22 11:00:00",
             "endDate": "2022-01-22 12:30:00",
             "title": "Game-Making with Python",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 16,
             "startDate": "2022-01-22 12:30:00",
             "endDate": "2022-01-22 13:15:00",
             "title": "Making a Resume in HTML/CSS",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 17,
             "startDate": "2022-01-22 12:00:00",
             "endDate": "2022-01-22 13:45:00",
             "title": "Getting Started With Twilio",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 18,
             "startDate": "2022-01-22 13:00:00",
             "endDate": "2022-01-22 13:30:00",
             "title": "Link Apartments by Brivia Group Workshop",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 19,
             "startDate": "2022-01-22 13:30:00",
             "endDate": "2022-01-22 14:30:00",
             "title": "Navigating the Startup Ecosystem as a Student",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 20,
             "startDate": "2022-01-22 14:00:00",
             "endDate": "2022-01-22 16:00:00",
             "title": "Speed networking",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 21,
             "startDate": "2022-01-22 16:00:00",
             "endDate": "2022-01-22 17:30:00",
             "title": "Introduction to Design",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 22,
             "startDate": "2022-01-22 17:00:00",
             "endDate": "2022-01-22 18:30:00",
             "title": "Founding a Startup at McGill",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 23,
             "startDate": "2022-01-22 17:00:00",
             "endDate": "2022-01-22 17:30:00",
             "title": "Mug Cakes",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 24,
             "startDate": "2022-01-22 17:30:00",
             "endDate": "2022-01-22 18:30:00",
             "title": "Math & Logic Competition",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 25,
             "startDate": "2022-01-22 18:30:00",
             "endDate": "2022-01-22 19:30:00",
             "title": "Dinner and Trivia",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 26,
             "startDate": "2022-01-22 19:30:00",
             "endDate": "2022-01-22 20:30:00",
             "title": "Paint With MLH and Bob Ross",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 27,
             "startDate": "2022-01-22 19:50:00",
             "endDate": "2022-01-22 20:00:00",
             "title": "Checking-In Form 2 Due - Project Declaration",
-            "location": "Google Forms"
+            "location": "Google Forms",
+            "owner": "McHacks"
         },
         {
             "id": 28,
             "startDate": "2022-01-22 21:30:00",
             "endDate": "2022-01-22 22:15:00",
             "title": "Typing Races",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 29,
             "startDate": "2022-01-22 23:00:00",
             "endDate": "2022-01-22 00:30:00",
             "title": "Game Tournament",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 30,
             "startDate": "2022-01-22 23:59:00",
             "endDate": "2022-01-23 03:59:00",
             "title": "Midnight Noodles & Movie",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 31,
             "startDate": "2022-01-23 08:00:00",
             "endDate": "2022-01-23 09:00:00",
             "title": "Coffee Hangout",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 32,
             "startDate": "2022-01-23 08:30:00",
             "endDate": "2022-01-23 09:00:00",
             "title": "Hacking Ends",
-            "location": "Hack-From-Home"
+            "location": "Hack-From-Home",
+            "owner": "McHacks"
         },
         {
             "id": 33,
             "startDate": "2022-01-23 09:30:00",
             "endDate": "2022-01-23 10:30:00",
             "title": "Scavenger Hunt",
-            "location": "Discord"
+            "location": "Discord",
+            "owner": "McHacks"
         },
         {
             "id": 34,
             "startDate": "2022-01-23 11:00:00",
             "endDate": "2022-01-23 13:00:00",
             "title": "Demo",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         },
         {
             "id": 35,
             "startDate": "2022-01-23 14:30:00",
             "endDate": "2022-01-23 15:15:00",
             "title": "Closing Ceremony",
-            "location": "Zoom"
+            "location": "Zoom",
+            "owner": "McHacks"
         }
     ]
 }
