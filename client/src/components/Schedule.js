@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { Component } from "react";
 import Paper from '@material-ui/core/Paper';
 import { ViewState, EditingState, IntegratedEditing } from '@devexpress/dx-react-scheduler';
 import {
@@ -16,7 +16,7 @@ import {
 const jsondata = require('../data/sample_data_1.json')
 const sampleData = jsondata.SampleData
 
-export default class Schedule extends React.PureComponent {
+export default class Schedule extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -40,7 +40,7 @@ export default class Schedule extends React.PureComponent {
       }
       if (changed) {
         data = data.map((event) => (
-            changed[event.id] ? { ...event, ...changed[event.id] } : event));
+          changed[event.id] ? { ...event, ...changed[event.id] } : event));
       }
       if (deleted !== undefined) {
         data = data.filter(event => event.id !== deleted);
@@ -53,43 +53,46 @@ export default class Schedule extends React.PureComponent {
     const { defaultDate, data, currentViewName } = this.state;
 
     return (
-      <Paper elevation={3}>
-        <Scheduler
-          data={data}
-          height={660}
-        >
-          <ViewState
-            defaultCurrentDate={defaultDate}
-            currentViewName={currentViewName}
-            onCurrentViewNameChange={this.currentViewNameChange}
-          />
-          <EditingState
-            onCommitChanges={this.commitChanges}
-          />
-          <IntegratedEditing />
+      <div style={{ marginTop: 50 }}>
+        <Paper elevation={3}>
+          <Scheduler
+            data={data}
+            height={800}
+          >
+            <ViewState
+              defaultCurrentDate={defaultDate}
+              currentViewName={currentViewName}
+              onCurrentViewNameChange={this.currentViewNameChange}
+            />
+            <EditingState
+              onCommitChanges={this.commitChanges}
+            />
+            <IntegratedEditing />
 
-          <WeekView
-            name="mchacks"
-            displayName="Full Schedule"
-            excludedDays={[1, 2, 3, 4]}
-            startDayHour={0}
-            endDayHour={23}
-          />
-          <DayView
-            startDayHour={3}
-            endDayHour={20}
-          />
-          <ConfirmationDialog />
-          <Appointments />
-          <AppointmentTooltip
-            showOpenButton
-            showDeleteButton
-          />
-          <AppointmentForm />
-          <Toolbar />
-          <ViewSwitcher />
-        </Scheduler>
-      </Paper>
+            <WeekView
+              name="mchacks"
+              displayName="Full Schedule"
+              excludedDays={[1, 2, 3, 4]}
+              startDayHour={0}
+              endDayHour={23}
+            />
+            <DayView
+              startDayHour={3}
+              endDayHour={20}
+            />
+            <ConfirmationDialog />
+            <Appointments />
+            <AppointmentTooltip
+              showOpenButton
+              showDeleteButton
+            />
+            <AppointmentForm />
+            <Toolbar />
+            <ViewSwitcher />
+          </Scheduler>
+        </Paper>
+      </div>
+
     );
   }
 }
