@@ -1,4 +1,4 @@
-import { Component, useState } from "react";
+import { Component} from "react";
 import Paper from '@material-ui/core/Paper';
 import { ViewState, EditingState, IntegratedEditing } from '@devexpress/dx-react-scheduler';
 import {
@@ -10,7 +10,9 @@ import {
   AppointmentTooltip,
   ConfirmationDialog,
   ViewSwitcher,
-  Toolbar
+  Toolbar,
+  TodayButton,
+  DateNavigator
 } from '@devexpress/dx-react-scheduler-material-ui';
 
 import LoadingBar from './LoadingBar'
@@ -30,6 +32,41 @@ const initialState = {
   fetching: false
 }
 
+const messages = {
+  moreInformationLabel: '',
+};
+
+const TextEditor = (props) => {
+  // eslint-disable-next-line react/destructuring-assignment
+  if (props.type === 'multilineTextEditor') {
+    return null;
+  } return <AppointmentForm.TextEditor {...props} />;
+};
+
+const BasicLayout = ({ onFieldChange, appointmentData, ...restProps }) => {
+  const onCustomFieldChange = (nextValue) => {
+    onFieldChange({ customField: nextValue });
+  };
+
+
+  return (
+    <AppointmentForm.BasicLayout
+      appointmentData={appointmentData}
+      onFieldChange={onFieldChange}
+      {...restProps}
+    >
+      <AppointmentForm.Label
+        text="Location"
+        type="title"
+      />
+      <AppointmentForm.TextEditor
+        value={appointmentData.customField}
+        onValueChange={onCustomFieldChange}
+        placeholder="Location"
+      />
+    </AppointmentForm.BasicLayout>
+  );
+};
 
 export default class Schedule extends Component {
   constructor(props) {
@@ -67,7 +104,7 @@ export default class Schedule extends Component {
   }
 
   updateStorage(key, value) {
-    store.set(key,value)
+    store.set(key, value)
   }
 
   fetchEvents() {
@@ -142,9 +179,15 @@ export default class Schedule extends Component {
               showOpenButton
               showDeleteButton
             />
-            <AppointmentForm />
+            <AppointmentForm
+            basicLayoutComponent={BasicLayout}
+            textEditorComponent={TextEditor}
+            messages={messages}
+            />
             <Toolbar />
             <ViewSwitcher />
+            <DateNavigator />
+            <TodayButton />
           </Scheduler>
         </Paper>
       </div>
